@@ -1,8 +1,0 @@
-Found dataset:  1
-Command line:   ../../automotive_susan_data/1.pgm output_large.edges.pgm -e > ftmp_out
-Loop wrap:      81
-
-
-real	0m1.152s
-user	0m1.075s
-sys	0m0.027s

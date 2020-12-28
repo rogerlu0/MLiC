@@ -1,8 +1,0 @@
-Found dataset:  1
-Command line:   -d -k -f -c ../../bzip2_data/1.bz2 > ftmp_out
-Loop wrap:      6
-
-
-real	0m1.346s
-user	0m1.213s
-sys	0m0.033s
