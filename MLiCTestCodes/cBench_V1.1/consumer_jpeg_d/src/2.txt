@@ -1,0 +1,8 @@
+Found dataset:  1
+Command line:   -dct int -ppm -outfile output_large_decode.ppm ../../consumer_jpeg_data/1.jpg > ftmp_out
+Loop wrap:      450
+
+
+real	0m2.945s
+user	0m1.333s
+sys	0m0.054s
