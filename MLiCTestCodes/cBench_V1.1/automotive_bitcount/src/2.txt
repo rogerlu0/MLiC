@@ -1,0 +1,8 @@
+Found dataset:  1
+Command line:   1125000 > ftmp_out
+Loop wrap:      80
+
+
+real	0m12.051s
+user	0m5.794s
+sys	0m0.011s
