@@ -1,0 +1,95 @@
+network_patricia
+-gvn -simplifycfg -lower-expect -inline -licm -sroa -assumption-cache-tracker -tailcallelim -constmerge -correlated-propagation -argpromotion -globaldce -functionattrs -strip-dead-prototypes -tti -mem2reg -ipsccp -loops -instcombine -scoped-noalias -loop-rotate -inferattrs -domtree -sccp -sroa -assumption-cache-tracker -tailcallelim -constmerge -correlated-propagation -argpromotion -globaldce -functionattrs -strip-dead-prototypes -tti -mem2reg -ipsccp -loops -instcombine -scoped-noalias
+
+automotive_bitcount
+-tti -targetlibinfo -tbaa -scoped-noalias -assumption-cache-tracker -verify -simplifycfg -domtree -sroa -early-cse -lower-expect -forceattrs -inferattrs -ipsccp -globalopt -mem2reg -deadargelim -basicaa -aa -instcombine -basiccg -globals-aa -prune-eh -inline -functionattrs -argpromotion -lazy-value-info -jump-threading -correlated-propagation -tailcallelim -reassociate -loops -loop-simplify -lcssa -loop-rotate -licm -loop-unswitch -scalar-evolution -indvars -loop-idiom -loop-deletion -loop-unroll -mldst-motion -memdep -gvn -memcpyopt -sccp -demanded-bits -bdce -dse -adce -barrier -rpo-functionattrs -elim-avail-extern -float2int -branch-prob -block-freq -loop-accesses -loop-vectorize -slp-vectorizer -alignment-from-assumptions -strip-dead-prototypes -globaldce -constmerge -always-inline
+
+office_rsynth
+-gvn -instcombine -simplifycfg -lower-expect -inline -licm -bool-ret-to-int -place-backedge-safepoints-impl -dce -lint -constprop -partial-inliner -die -irce -add-discriminators -sancov -instcount -safe-stack -amdgpu-annotate-kernel-features -sjljehprepare -cost-model -external-aa -lowerinvoke -early-cse -functionattrs -loop-unswitch -globaldce -jump-threading -scalar-evolution -alignment-from-assumptions -prune-eh -strip-dead-prototypes -reassociate -tti
+
+telecom_gsm
+-scalarrepl -codegenprepare -instsimplify -sancov -amdgpu-annotate-kernel-features -loop-distribute -load-combine -ipconstprop -consthoist -scalarrepl-ssa -iv-users -alloca-hoisting -scalarizer -loop-rotate -domtree -sccp -early-cse -functionattrs -loop-unswitch -globaldce -jump-threading -scalar-evolution -alignment-from-assumptions -prune-eh -strip-dead-prototypes -reassociate -tti -scalarrepl -codegenprepare -instsimplify -sancov -amdgpu-annotate-kernel-features -loop-distribute -load-combine -ipconstprop -consthoist -scalarrepl-ssa -iv-users -alloca-hoisting -scalarizer -mem2reg -licm -tailcallelim -globals-aa -lcssa -loop-vectorize -lazy-value-info -always-inline -adce -globalopt -aa
+
+consumer_mad
+-memcpyopt -loop-rotate -instcombine -loop-simplify -loop-unswitch -adce -slp-vectorizer -tailcallelim -memcpyopt -loop-rotate -instcombine -loop-simplify -memcpyopt
+
+office_ghostscript
+-loop-vectorize -demanded-bits -instcombine -basiccg -mldst-motion -globalopt -loop-idiom -adce -slp-vectorizer -dse -jump-threading -branch-prob -sccp -basiccg -mldst-motion -globalopt -loop-idiom -adce -slp-vectorizer -dse -jump-threading -branch-prob -sccp -basiccg -mldst-motion -globalopt -loop-idiom -adce -slp-vectorizer -dse -jump-threading -branch-prob -sccp -tti -loop-accesses -barrier -correlated-propagation -loop-unswitch -basicaa -forceattrs -float2int -rpo-functionattrs -assumption-cache-tracker -early-cse -loop-unroll -lazy-value-info -loop-vectorize -demanded-bits -instcombine
+
+office_ispell
+-slp-vectorizer -scoped-noalias -tbaa -float2int -inferattrs -loop-deletion -correlated-propagation -domtree -basiccg -early-cse -slp-vectorizer -scoped-noalias -tbaa -float2int -inferattrs
+
+network_dijkstra
+-gvn -instcombine -simplifycfg -reassociate -inline -lower-expect -licm -loop-rotate -inferattrs -tti -scoped-noalias -domtree -sccp -bool-ret-to-int -place-backedge-safepoints-impl -safe-stack -dce -lint -constprop -partial-inliner -die -irce -mem2reg -prune-eh -tailcallelim -alignment-from-assumptions -functionattrs -early-cse -jump-threading -globaldce -scalar-evolution -always-inline -strip-dead-prototypes -loop-unswitch
+
+security_pgp_d
+-globalopt -verify -argpromotion -instcombine -reassociate -globalopt -verify -argpromotion -instcombine -reassociate -basicaa -mem2reg -tbaa -simplifycfg -tti    
+
+security_pgp_e
+-sroa -assumption-cache-tracker -dse -lcssa -constmerge -correlated-propagation -argpromotion -tti -mem2reg -inferattrs -ipsccp -loops -scoped-noalias -sroa -assumption-cache-tracker -dse -lcssa -constmerge -correlated-propagation -argpromotion -tti -mem2reg -inferattrs -ipsccp -loops -scoped-noalias -early-cse -loop-unswitch -globaldce -functionattrs -jump-threading -scalar-evolution -alignment-from-assumptions -prune-eh -strip-dead-prototypes -reassociate -adce -loop-vectorize -globalopt -aa -licm -tailcallelim -always-inline -lazy-value-info
+
+consumer_lame
+-tti -loop-accesses -barrier -correlated-propagation -loop-unswitch -basicaa -forceattrs -float2int -rpo-functionattrs -assumption-cache-tracker -early-cse -loop-unroll -lazy-value-info -block-freq -memdep -loop-rotate -loop-deletion -bdce -scoped-noalias -tbaa -gvn -mem2reg -lcssa -domtree -basiccg -mldst-motion -globalopt -loop-idiom -adce -slp-vectorizer -dse -jump-threading -branch-prob -sccp -loop-vectorize -demanded-bits -instcombine -loop-vectorize -demanded-bits -instcombine -basiccg -mldst-motion -globalopt -loop-idiom -adce -slp-vectorizer -dse -jump-threading -branch-prob -sccp
+
+telecom_adpcm_c
+-sroa -dse -assumption-cache-tracker -tailcallelim -constmerge -correlated-propagation -inferattrs -argpromotion -ipsccp -loops -mem2reg -scoped-noalias -lcssa -adce -globals-aa -loop-vectorize -lazy-value-info -always-inline -globalopt -aa -early-cse -functionattrs -loop-unswitch -globaldce -jump-threading -scalar-evolution -alignment-from-assumptions -prune-eh -strip-dead-prototypes -reassociate -tti
+
+telecom_adpcm_d
+-sroa -assumption-cache-tracker -dse -correlated-propagation -constmerge -mem2reg -argpromotion -inferattrs -ipsccp -loops -scoped-noalias
+
+security_blowfish_d
+-lcssa -scoped-noalias -lazy-value-info -constmerge -forceattrs -globalopt -basiccg -verify -alignment-from-assumptions -globaldce -prune-eh -inline -tailcallelim -indvars -block-freq -jump-threading -sroa -lower-expect -licm -loop-simplify -basicaa -loop-unroll -sccp -globals-aa -bdce -loop-deletion -elim-avail-extern -functionattrs -branch-prob -slp-vectorizer -mem2reg -strip-dead-prototypes -tbaa -correlated-propagation -simplifycfg -loop-accesses -always-inline -memdep -tti -dse -ipsccp -deadargelim -aa -loop-vectorize -loops -targetlibinfo -loop-rotate -scalar-evolution -rpo-functionattrs -inferattrs -float2int -gvn -loop-unswitch -memcpyopt -globalopt -basiccg -verify -alignment-from-assumptions -globaldce
+
+security_blowfish_e
+-sroa -assumption-cache-tracker -dse -correlated-propagation -constmerge -argpromotion -mem2reg -ipsccp -inferattrs -loops -scoped-noalias
+
+consumer_jpeg_c
+-sroa -dse -assumption-cache-tracker -constmerge -argpromotion -correlated-propagation -loop-vectorize -inferattrs -ipsccp -loops -mem2reg -scoped-noalias -sancov -amdgpu-annotate-kernel-features -ipconstprop -sjljehprepare -early-cse -lcssa -tailcallelim -always-inline -globalopt -aa -globals-aa -lazy-value-info -adce -sancov -amdgpu-annotate-kernel-features -ipconstprop -sjljehprepare -early-cse -lcssa -tailcallelim -always-inline -globalopt -aa -globals-aa -lazy-value-info -adce
+
+security_rijndael_e
+-sroa -assumption-cache-tracker -dse -correlated-propagation -constmerge -loop-vectorize -argpromotion -mem2reg -ipsccp -inferattrs -loops -scoped-noalias -gvn -instcombine -globals-aa -lower-expect -inline -lazy-value-info -domtree -licm -sccp -tti -loop-rotate -alignment-from-assumptions -reassociate -jump-threading -prune-eh
+
+office_stringsearch1
+-loop-rotate -domtree -sccp -gvn -instcombine -simplifycfg -inline -lower-expect -licm -early-cse -functionattrs -loop-unswitch -globaldce -tailcallelim -jump-threading -scalar-evolution -alignment-from-assumptions -prune-eh -strip-dead-prototypes -reassociate -tti -sroa -assumption-cache-tracker -dse -constmerge -correlated-propagation -argpromotion -inferattrs -mem2reg -ipsccp -loops -scoped-noalias
+
+automotive_susan_c
+-gvn -instcombine -simplifycfg -inline -globals-aa -lower-expect -early-cse -loop-unswitch -globaldce -functionattrs -jump-threading -scalar-evolution -alignment-from-assumptions -prune-eh -strip-dead-prototypes -reassociate -scalarrepl -place-backedge-safepoints-impl -scalarrepl-ssa -bool-ret-to-int -codegenprepare -load-combine -consthoist -lint -partial-inliner -dce -cross-dso-cfi -constprop -scalarizer -irce -gvn -instcombine -simplifycfg -inline -globals-aa -lower-expect
+
+automotive_susan_e
+-gvn -instcombine -simplifycfg -inline -lower-expect -lazy-value-info -scalarrepl -add-discriminators -instsimplify -cfl-aa -codegenprepare -sancov -amdgpu-annotate-kernel-features -loop-distribute -ipconstprop -scalarrepl-ssa -iv-users -load-combine -instcount -alloca-hoisting -gvn -instcombine -simplifycfg -inline -lower-expect -lazy-value-info -consthoist -safe-stack -dce -cross-dso-cfi -sjljehprepare -constprop -lowerinvoke -partial-inliner -external-aa -cost-model -die -consthoist -safe-stack -dce -cross-dso-cfi -sjljehprepare -constprop -lowerinvoke -partial-inliner -external-aa -cost-model -die
+
+consumer_tiff2bw
+-mem2reg -correlated-propagation -scoped-noalias -globals-aa -lcssa -jump-threading -tti -lazy-value-info -adce -dse -globalopt -bool-ret-to-int -place-backedge-safepoints-impl -scalarizer -lint -die -loops -argpromotion -constmerge -loop-vectorize -assumption-cache-tracker -ipsccp -aa -inferattrs
+
+consumer_jpeg_d
+-sroa -loop-unswitch -tailcallelim -alignment-from-assumptions -reassociate -functionattrs -strip-dead-prototypes -tti -mem2reg -scalar-evolution -jump-threading -prune-eh -always-inline -early-cse -sancov -amdgpu-annotate-kernel-features -ipconstprop -sjljehprepare -lowerinvoke -external-aa -cost-model -sancov -amdgpu-annotate-kernel-features -ipconstprop -sjljehprepare -lowerinvoke -external-aa -cost-model
+
+consumer_tiff2rgba
+-sroa -assumption-cache-tracker -dse -tailcallelim -constmerge -correlated-propagation -argpromotion -globaldce -strip-dead-prototypes -tti -mem2reg -ipsccp -loops -scoped-noalias -bool-ret-to-int -alloca-hoisting -codegenprepare -instsimplify -iv-users -load-combine -place-backedge-safepoints-impl -safe-stack -scalarizer -scalarrepl -add-discriminators -sancov -amdgpu-annotate-kernel-features -loop-distribute -ipconstprop -cfl-aa -instcount -lowerinvoke -cost-model -external-aa -die -sjljehprepare -lcssa -adce -loop-vectorize -lazy-value-info -aa -amdgpu-annotate-uniform
+
+automotive_susan_s
+-gvn -instcombine -simplifycfg -inline -lower-expect -loops -argpromotion -correlated-propagation -constmerge -assumption-cache-tracker -ipsccp -dse -inferattrs -loops -argpromotion -correlated-propagation -constmerge -assumption-cache-tracker -ipsccp -dse -inferattrs -safe-stack -dce -cross-dso-cfi -sjljehprepare -constprop -lowerinvoke -partial-inliner -die
+
+bzip2e
+-mem2reg -alignment-from-assumptions -prune-eh -jump-threading -reassociate -scalar-evolution -functionattrs -tti -always-inline -early-cse -globaldce -strip-dead-prototypes -loop-unswitch -mem2reg -alignment-from-assumptions -prune-eh -jump-threading -reassociate -scalar-evolution -functionattrs -tti -always-inline -early-cse -globaldce -strip-dead-prototypes -loop-unswitch -sccp -domtree -loop-rotate -scoped-noalias -sjljehprepare -sancov -ipconstprop -lowerinvoke -amdgpu-annotate-kernel-features
+
+automotive_qsort1
+-loop-deletion -correlated-propagation -domtree -basiccg -early-cse -loop-rotate -assumption-cache-tracker -gvn -sccp -branch-prob -adce -jump-threading -targetlibinfo -constmerge -loop-simplify -alignment-from-assumptions -globals-aa -mldst-motion -dse -reassociate -licm -globalopt -memcpyopt -basicaa -prune-eh -loop-idiom -verify -tailcallelim -ipsccp -forceattrs -instcombine -indvars -bdce -strip-dead-prototypes -always-inline -functionattrs -block-freq -rpo-functionattrs -elim-avail-extern -loop-accesses -simplifycfg -loop-unswitch -loop-unroll -barrier -tti -deadargelim -memdep -inline -argpromotion -sroa -globaldce -lower-expect -demanded-bits -aa -alignment-from-assumptions -globals-aa -mldst-motion -dse -reassociate -licm -globalopt -memcpyopt -basicaa -prune-eh -loop-idiom -verify -tailcallelim -ipsccp -forceattrs -instcombine -indvars -bdce -strip-dead-prototypes -always-inline -functionattrs -block-freq -rpo-functionattrs -elim-avail-extern -loop-accesses -simplifycfg -loop-unswitch -loop-unroll -barrier -tti -deadargelim -memdep -inline -argpromotion -sroa -globaldce -lower-expect -demanded-bits -aa
+
+consumer_tiffdither
+-scalarrepl-ssa -codegenprepare -bool-ret-to-int -load-combine -dce -die -lint -place-backedge-safepoints-impl -scalarizer -irce
+
+security_sha
+-mem2reg -licm -forceattrs -functionattrs -loop-idiom -rpo-functionattrs -correlated-propagation -gvn -prune-eh -strip-dead-prototypes -mem2reg -licm -forceattrs -functionattrs -loop-idiom -tti -adce -alignment-from-assumptions -lazy-value-info -bdce -tti -adce -alignment-from-assumptions -lazy-value-info -bdce -tti -adce -alignment-from-assumptions -lazy-value-info -bdce -globals-aa -sroa -early-cse -basicaa -inferattrs -memcpyopt -slp-vectorizer -scalar-evolution -indvars -loop-deletion -loop-vectorize -ipsccp -elim-avail-extern -sccp -globalopt -loop-accesses -aa -deadargelim -assumption-cache-tracker -constmerge -jump-threading -mldst-motion -reassociate -scoped-noalias -float2int -domtree -simplifycfg -memdep -block-freq -globaldce -targetlibinfo -loop-unswitch -barrier -branch-prob -argpromotion -tailcallelim -lower-expect -tbaa -dse
+
+telecom_CRC32
+-gvn -instcombine -simplifycfg -inline -reassociate -lower-expect -licm -lcssa -adce -globals-aa -loop-vectorize -lazy-value-info -always-inline -globalopt -aa
+
+security_rijndael_d
+-sroa -assumption-cache-tracker -dse -constmerge -loop-vectorize -lazy-value-info -argpromotion -correlated-propagation -globals-aa -inferattrs -mem2reg -ipsccp -loops -scoped-noalias -sccp -domtree -loop-rotate -gvn -instcombine -simplifycfg -inline -lower-expect -licm
+
+consumer_tiffmedian
+-mem2reg -tailcallelim -licm -loop-vectorize -globals-aa -lcssa -lazy-value-info -always-inline -adce -globalopt -aa -mem2reg -tailcallelim -licm -loop-vectorize -globals-aa -lcssa -lazy-value-info -always-inline -adce -globalopt -aa -mem2reg -tailcallelim -licm -loop-vectorize -globals-aa -lcssa -lazy-value-info -always-inline -adce -globalopt -aa
+
+bzip2d
+-loop-vectorize -demanded-bits -instcombine -loops -loop-simplify -inferattrs -loop-vectorize -demanded-bits -instcombine -tti -loop-accesses -barrier -correlated-propagation -loop-unswitch -basicaa -forceattrs -float2int -rpo-functionattrs -assumption-cache-tracker -early-cse -loop-unroll -lazy-value-info -block-freq -memdep -loop-rotate -loop-deletion -bdce -scoped-noalias -tbaa -gvn -mem2reg -lcssa -domtree
