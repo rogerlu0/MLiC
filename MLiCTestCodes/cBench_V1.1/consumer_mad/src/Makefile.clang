@@ -1,0 +1,33 @@
+# ************ CCC - passing optimization flags ************ 
+FPM = -DFPM_ARM
+INCLUDE = $(FPM)
+ifeq ($(CCC_OPTS),)
+ CCC_OPTS =
+endif
+ifeq ($(CCC_OPTS_ADD),)
+ CCC_OPTS_ADD = -domtree -memdep -dse -adce -instcombine -simplifycfg -domtree -loops -loop-simplify -lcssa -branch-prob -simplifycfg -reassociate -domtree -loops -loop-simplify -domtree -memdep -dse -adce -instcombine -simplifycfg -domtree -loops -loop-simplify -lcssa -branch-prob -memdep -domtree -memdep -gvn -memdep -memcpyopt -sccp -simplifycfg -reassociate -domtree -loops -loop-simplify -domtree -memdep -dse -adce -instcombine -simplifycfg -domtree -loops -loop-simplify -lcssa -branch-prob
+endif
+
+# Declarations
+ifeq ($(ZCC),) 
+ ZCC = clang
+endif
+ifeq ($(CC_OPTS),)
+ CC_OPTS = -emit-llvm
+endif
+ifeq ($(LDCC),)
+ LDCC = opt
+endif
+ifeq ($(LD_OPTS),)
+ LD_OPTS = -o a.out
+endif
+
+# Actions
+all:		
+	$(ZCC) -emit-llvm -c *.c
+	llvm-link *.bc -o temp.bc
+	$(LDCC) $(CCC_OPTS_ADD) temp.bc > temp2.bc
+	$(ZCC) $(LD_OPTS) temp2.bc -lm
+
+clean:
+	rm -f a.out *.o *.a *.s *.i *.I
