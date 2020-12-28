@@ -1,0 +1,10 @@
+Reading config file ...
+Measuring ALL characteristics...
+interval size: full
+Returning data for full execution...
+ILP window size: 32
+page size: 2^12
+block size: 2^6
+ITYPES spec file: /home/luojie/下载/pin2/source/tools/mica_v0.40/itypes_default.spec
+append pid: yes
+All done reading config

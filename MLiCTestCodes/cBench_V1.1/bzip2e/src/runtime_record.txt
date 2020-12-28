@@ -1,0 +1,8 @@
+Found dataset:  1
+Command line:   -z -k -f -c ../../automotive_qsort_data/1.dat > ftmp_out
+Loop wrap:      9
+
+
+real	0m1.620s
+user	0m1.490s
+sys	0m0.061s
