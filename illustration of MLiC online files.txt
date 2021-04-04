@@ -1,0 +1,14 @@
+https://github.com/rogerlu0/MLiC/MLiCTestCodes and README.txt:
+Including the codes and files that can be used to reproduce our experiments. See README.txt to execute them.
+
+https://github.com/rogerlu0/MLiC/features.txt:
+The list of dynamic and static features used in this work.
+
+https://github.com/rogerlu0/MLiC/raw_records.txt:
+The raw data records of MLiC on our experimental platform. Including the execution time of  each benchmark optimized by -O3 and the recommended pass sequence recommended by MLiC and corresponding speedup.
+
+https://github.com/rogerlu0/MLiC/raw_records_doubleCheck.txt:
+The raw data records of reproduced experiments on another platform. Including the execution time of  each benchmark optimized by -O3 and the recommended pass sequence recommended by MLiC and corresponding speedup.
+
+https://github.com/rogerlu0/MLiC/dep_mat_example.csv:
+An example of the pairs and their frequencies of occurrence during using Algorithm 1 to construct pass subsequences.
