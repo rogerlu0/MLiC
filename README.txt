@@ -31,3 +31,11 @@ We have completed evaluations of each single program on an Intel CPU platform, i
 cd Path-to-MLiC-verification
 sudo Python3 MLiC_runs.py --app=ALL
 *********************************************************************************
+
+The compilation process illustrated in provided Makefile file (MLiC/MLiCTestCodes/data/Makefile.llvm) is briefly shown as follows,
+
+clang -emit-llvm -w -c *.c // Convert all C code to intermediate representation files .bc.
+llvm-link *.bc > temp.bc // Link .bc files into a single file.
+opt $(CCC_OPTS_ADD) temp.bc > temp2.bc // Apply the pass sequence on the interested .bc file.
+llvm-link -o a.out temp2.bc // Output the optimized executable binary a.out.
+*********************************************************************************
