@@ -27,6 +27,6 @@ consumer_tiffmedian	2.170	1.496	1.450
 consumer_lame	1.928	1.579	1.220
 consumer_mad	2.897	2.597	1.120
 office_ghostscript	12.337	8.995	1.370
-office_ispell	0.732	0.637	2.070
+office_ispell	0.732	0.637	1.150
 security_pgp_d	2.096	1.576	1.330
 security_pgp_e	2.207	1.809	1.220
