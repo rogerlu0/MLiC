@@ -1,1 +1,20 @@
+automotive_susan_s
+-slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine
 
+bzip2e
+-licm -strip-dead-prototypes -tti -safe-stack -licm -strip-dead-prototypes -tti -slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine -safe-stack
+
+consumer_tiffmedian
+-strip -bounds-checking -insert-gcov-profiling -licm -strip-dead-prototypes -tti -slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine -branch-prob -tbaa -float2int -loop-unroll -globalopt -barrier -reassociate -prune-eh -licm -strip-dead-prototypes -tti
+
+network_patricia
+-loop-idiom -aa -mldst-motion -slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine -loop-idiom -aa -mldst-motion -strip -bounds-checking -insert-gcov-profiling -sancov
+
+office_stringsearch1
+-loop-idiom -aa -mldst-motion
+
+security_sha
+-slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine -loop-idiom -aa -mldst-motion -slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine -sancov -slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine
+
+telecom_gsm
+-slp-vectorizer -basiccg -loop-simplify -gvn -globaldce -lazy-value-info -simplifycfg -early-cse -domtree -loops -verify -memdep -loop-vectorize -mem2reg -memcpyopt -forceattrs -bdce -jump-threading -correlated-propagation -loop-accesses -block-freq -scalar-evolution -sroa -instcombine
